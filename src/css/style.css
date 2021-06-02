@@ -4,6 +4,7 @@
     padding: 0;
 }
 .container {
+    position: relative;
     width: 1140px;
     margin: 0 auto;
 }
@@ -70,7 +71,7 @@ h2.title {
     color: #F9BF3B;
     font-weight: 700;
 }
-.promo .promo_btn {
+.promo .promo_btn, .record .record_btn {
     display: block;
     margin: 0 auto;
     margin-top: 73px;
@@ -107,12 +108,12 @@ h2.title {
     margin-top: 13px;
 }
 .waiting {
-    height: 604px;
+    min-height: 604px;
     background: #EFEFEF;
     padding: 85px 0 75px 0;
     
 }
-.waiting .waiting_header {
+.waiting .waiting_header,  .finish .finish_header, .first h2.first_vebinar {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -122,13 +123,17 @@ h2.title {
     text-transform: uppercase;
 
 }
-.waiting .waiting_divider {
+.finish .finish_header {
+    color: white;
+}
+.waiting .waiting_divider, .finish .finish_divider {
     width: 220px;
     height: 7px;
     background: #F9BF3B;
     margin: 0 auto;
     margin-top: 18px;
 }
+
 .waiting .waiting_subheader {
     margin-top: 17px;
     font-family: Roboto;
@@ -138,15 +143,14 @@ h2.title {
     color: #4A4A4A;
 }
 .waiting .waiting_wrapper {
-margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
 }
 .waiting .waiting_wrapper .waiting_item {
-    display: inline-block;
-    vertical-align: top;
-    width: 339px;
+     width: 339px;
     text-align: center;
-    margin: 0 15px;
-}
+   }
 .waiting .waiting_wrapper .waiting_item .waiting_img {
     width: 100%;
 }
@@ -157,4 +161,150 @@ margin-top: 45px;
     font-size: 15px;
     line-height: 21px;
     color: #4A4A4A;
+}
+.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+.optimization .optimization_header {
+    margin-left: 391px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 30px;
+    color: #299CBD;
+    text-transform: uppercase;
+
+
+}
+.optimization .optimization_text {
+    margin-top: 25px;
+    margin-left: 391px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27px;
+    color: #4A4A4A;
+}
+.optimization .optimization_text span {
+    font-family: "Roboto-Bold";
+    font-weight: 700;
+}
+.optimization .optimization_img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
+}
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/second_bg.png') center center/cover no-repeat;
+}
+.finish .finish_wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+.finish .finish_wrapper .finish_item {
+    width: 204px;
+}
+.finish .finish_wrapper .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;
+    background: #B4E2FF;
+    border-radius: 100%;
+}
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 25px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+    color: #EFEFEF;
+}
+.record {
+    min-height: 631px;
+    background: #EFEFEF;
+    padding: 85px 0 88px 0;
+}
+.record img {
+    display: block;
+    margin: 0 auto;
+}
+.record .record_text {
+    margin: 45px auto 0 auto;
+    width: 1015px;
+    height: 113px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #252525;
+}
+.first {
+    min-height: 512px;
+    padding: 74px 0 5px 0;
+}
+.first img{
+    display: block;
+    margin: 0 auto 36px auto;
+}
+
+h2.first_data {
+    margin-top: 30px;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+.first p {
+    margin-top: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+
+}
+footer {
+    min-height: 169px;
+    background: #1A1A1A;
+    margin: 0 auto;
+    padding: 57px 0 69px 0;
+}
+footer .footer_text {
+   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #888888;
+    text-align: center;
+    text-decoration-line: underline;
+
+}
+footer .footer_text a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #888888;
+    text-align: center;
 }
